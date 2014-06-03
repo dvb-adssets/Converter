@@ -13,7 +13,7 @@ package converter;
 import java.math.BigDecimal;
 import javax.ejb.*;
 
-@Stateless
+@Stateless // Lets 
 public class ConverterBean implements Converter {
     private BigDecimal yenRate = new BigDecimal("115.3100");
     private BigDecimal euroRate = new BigDecimal("0.0071");

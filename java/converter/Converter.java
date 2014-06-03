@@ -13,8 +13,8 @@ package converter;
 import java.math.BigDecimal;
 import javax.ejb.Remote;
 
-@Remote // Lets the container know that ConverterBean will be accessed by remote 
-        // clients.
+
+@Remote // Lets the container know that ConverterBean will be accessed by remote clients.
 public interface Converter {
     public BigDecimal dollarToYen(BigDecimal dollars);
     public BigDecimal yenToEuro(BigDecimal yen);
