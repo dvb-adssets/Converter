@@ -1,3 +1,5 @@
+package converter;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -22,7 +24,7 @@ public class ConverterBean implements Converter {
     }
     
     public BigDecimal yenToEuro(BigDecimal yen) {
-        BigDecimal result = yen.multiply(yenRate);
+        BigDecimal result = yen.multiply(euroRate);
         return result.setScale(2, BigDecimal.ROUND_UP);
     }
 }
